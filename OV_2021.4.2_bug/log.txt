@@ -1,0 +1,44 @@
+Model Optimizer arguments:
+Common parameters:
+	- Path to the Input Model: 	/newHome/Code/ReportedBugs/OV_2021.4.2_bug/debugOV/vit_base_patch16_224.onnx
+	- Path for generated IR: 	/newHome/Code/ReportedBugs/OV_2021.4.2_bug/debugOV
+	- IR output name: 	vit_base_patch16_224
+	- Log level: 	ERROR
+	- Batch: 	Not specified, inherited from the model
+	- Input layers: 	Not specified, inherited from the model
+	- Output layers: 	Not specified, inherited from the model
+	- Input shapes: 	[1,3, 224, 224]
+	- Mean values: 	Not specified
+	- Scale values: 	Not specified
+	- Scale factor: 	Not specified
+	- Precision of IR: 	FP32
+	- Enable fusing: 	True
+	- Enable grouped convolutions fusing: 	True
+	- Move mean values to preprocess section: 	None
+	- Reverse input channels: 	False
+ONNX specific parameters:
+	- Inference Engine found in: 	/home/alhasan/miniconda3/envs/ov/lib/python3.8/site-packages/openvino
+Inference Engine version: 	2021.4.2-3976-0943ed67223-refs/pull/539/head
+Model Optimizer version: 	2021.4.2-3976-0943ed67223-refs/pull/539/head
+/home/alhasan/miniconda3/envs/ov/lib/python3.8/site-packages/mo/mo/utils/versions_checker.py:170: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  req_ver = LooseVersion(required_v)
+/home/alhasan/miniconda3/envs/ov/lib/python3.8/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+[ SUCCESS ] Generated IR version 10 model.
+[ SUCCESS ] XML file: /newHome/Code/ReportedBugs/OV_2021.4.2_bug/debugOV/vit_base_patch16_224.xml
+[ SUCCESS ] BIN file: /newHome/Code/ReportedBugs/OV_2021.4.2_bug/debugOV/vit_base_patch16_224.bin
+[ SUCCESS ] Total execution time: 25.32 seconds. 
+[ SUCCESS ] Memory consumed: 1104 MB. 
+It's been a while, check for a new version of Intel(R) Distribution of OpenVINO(TM) toolkit here https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit/download.html?cid=other&source=prod&campid=ww_2022_bu_IOTG_OpenVINO-2022-1&content=upg_all&medium=organic or on the GitHub*
+/home/alhasan/miniconda3/envs/ov/lib/python3.8/site-packages/torch/__init__.py:594: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert condition, message
+Model saved at debugOV/vit_base_patch16_224.pth
+ONNX model exported to debugOV/vit_base_patch16_224.onnx.
+Model Optimizer command to convert the ONNX model to OpenVINO:
+Exporting ONNX model to IR... This may take a few minutes.
+0
+(1, 3, 224, 224)
+PyTorch output:
+ [0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088, 0.6413670182228088]
+OV output:
+ [1.3498335, 0.65310645, 0.07171944, -1.4879308, -3.1347675, -4.133969, -4.4626064, -4.567269, -4.593824, -4.5874243]
