@@ -11,4 +11,4 @@
 ViT models converted from `timm` (pytorch-based) to `onnx` to `OpenVino` produce different outputs for the same input.
 
 ##### Steps to reproduce
-use the script `reproduce_OV_error.py` to reproduce the error.
+Use [this script](https://github.com/Alkhaddour/ReportedBugs/blob/main/OV_2021.4.2_bug/reproduce_OV_error.py) to reproduce the error. You can also check its output [here](https://github.com/Alkhaddour/ReportedBugs/blob/main/OV_2021.4.2_bug/log.txt).
